@@ -9,13 +9,15 @@ file_path = './data/BC_data.csv'
 
 df = pd.read_csv(file_path)
 
+df.columns = df.columns.str.strip()
 
-X = df.drop('diagnosis', axis=1) # Features
+
+X = df.drop(columns = ['diagnosis']) # Features
 y = df['diagnosis'] # Target variable
 
 
 # Normalizing the data
-scaler = StandardScaler
+scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 
