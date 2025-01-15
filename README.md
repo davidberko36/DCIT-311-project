@@ -1,14 +1,24 @@
 # Breast Cancer Detection Project
 
 ## Contributors
-David Asamoa Berko
-Ekow Essel Hazel Davis
-Ewurafua Quansah
+1. David Asamoa Berko
+2. Ekow Essel Hazel Davis
+3. Ewurafua Quansah
 
 This project aims to develop a machine learning model to detect breast cancer using logistic regression. The project includes data cleaning, model training, and evaluation.
 
-## Project Structure
-.gitignore .idea/ app/ data/ [main.py](main.py) models/ myenv/ notebooks/ [README.md](README.md) utils/
+```
+- 📁 .gitignore
+- 📁 .idea/
+- 📁 app/
+- 📁 data/
+- 🐍 [main.py](main.py)
+- 📁 models/
+- 📁 myenv/
+- 📁 notebooks/
+- 📄 [README.md](README.md)
+- 📁 utils/
+```
 
 ### Directories
 
