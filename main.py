@@ -3,6 +3,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from models.logistic_regression import train_logistic_regression, predict
 import numpy as np
+from sklearn.metrics import confusion_matrix, classification_report
+import pickle
 
 
 
@@ -34,3 +36,18 @@ weights, bias = train_logistic_regression(X_train, y_train.values, lr=0.1, epoch
 y_pred = predict(X_test, weights, bias)
 accuracy = np.mean(y_pred == y_test.values)
 print(f"Model Accuracy: {accuracy}")
+
+
+conf_matrix = confusion_matrix(y_test, y_pred)
+print(f"Confusion Matrix: \n{conf_matrix}")
+
+
+report = classification_report(y_test, y_pred, target_names=['Benign', 'Malignant'])
+print(f"Classification Report: \n{report}")
+
+
+model_params = {'weights': weights, "bias": bias}
+with open('./models/logistic_model.pkl', 'wb') as f:
+    pickle.dump(model_params, f)
+
+print("Model saved successfully")
