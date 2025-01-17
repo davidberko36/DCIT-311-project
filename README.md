@@ -36,11 +36,14 @@ This project aims to develop a machine learning model to detect breast cancer us
     - `Breast Cancer Detection Data Cleaning Documentation.ipynb`
     - `Breast Cancer Detection Model Documentation.ipynb`
 - **utils/**: Utility scripts and functions.
+    - `utils.py`
+
 
 ### 📄 Files
 
 - **main.py**: Entry point for the project.
 - **README.md**: Project documentation (this file).
+- **evaluation.py**
 
 ## 🚀 Setup
 
