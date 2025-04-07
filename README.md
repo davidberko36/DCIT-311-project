@@ -51,7 +51,7 @@ This project aims to develop a machine learning model to detect breast cancer us
 2. Create a virtual environment and activate it:
      ```sh
      python -m venv myenv
-     source myenv/bin/activate  # On Windows use `myenv\Scripts\activate`
+     source myenv/bin/activate  # On Windows use `myenv\Scripts\activate.bat` on command prompt
      ```
 3. Install the required packages:
      ```bash
